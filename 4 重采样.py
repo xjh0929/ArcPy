@@ -1,0 +1,6 @@
+# -*- coding: cp936 -*-
+import arcpy
+in_raster="C:/instruction/arcpy/data/data4/Ó°Ïñ/Landsat_20210701_xw.tif"
+out_raster="C:/instruction/arcpy/data/data4/½á¹û/Landsat_20210701_xw.tif"
+cell_size="0.0002"
+arcpy.Resample_management(in_raster, out_raster, cell_size, "#")
